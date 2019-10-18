@@ -2,18 +2,40 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta charset="UTF-8">
     <title>Front End Web 100</title>
 </head>
 
 <body>
     <header>
-        <h1>Front End Web 100 Starter</h1>
-        <h2>Progressive ITU</h2>
+        <h1>Tip Calculator</h1>
     </header>
     <main>
-        
+        <div class="input-group mb-3 div-with-padding">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">$</span>
+            </div>
+            <input type="number" id="btn-tip-amount" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">10%</button>
+            <button type="button" class="btn btn-secondary">15%</button>
+            <button type="button" class="btn btn-secondary selected">20%</button>
+        </div>
+        <div class="div-with-padding">
+            <label id="message"/>
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item">Bill Amount: <label id="bill-amount"></label></li>
+            <li class="list-group-item">Tip Percentage: <label id="tip-percent"></label></li>
+            <li class="list-group-item">Amount of tip: <label id="tip-amount"></label></li>
+            <li class="list-group-item total">Total to be Paid: <label id="total-amount"></label></li>
+          </ul>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
